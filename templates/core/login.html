@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Log in | Career Compass AI{% endblock %}
+{% block content %}<section class="form-shell"><div class="form-heading"><span class="eyebrow">WELCOME BACK</span><h1>Log in to your workspace</h1><p>Your next step is waiting.</p></div><form method="post" class="panel form-panel">{% csrf_token %}{{ form.as_p }}<button class="button primary full" type="submit">Log in</button><p class="form-foot">New here? <a href="{% url 'register' %}">Create an account</a></p></form></section>{% endblock %}

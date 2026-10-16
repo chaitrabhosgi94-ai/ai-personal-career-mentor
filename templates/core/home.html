@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Career Compass AI | Your career, with direction{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">YOUR PERSONAL AI CAREER MENTOR</span>
+    <h1>Turn your ambitions into a <span class="gradient-text">career roadmap.</span></h1>
+    <p class="hero-text">Get career suggestions, identify skill gaps, improve your resume, and practice interviews—all in one place.</p>
+    <div class="hero-actions"><a class="button primary" href="{% url 'register' %}">Build my career plan ↗</a><a class="button secondary" href="{% url 'login' %}">I already have an account</a></div>
+    <div class="trust-row"><span>✓ Personalized guidance</span><span>✓ Track your progress</span><span>✓ AI-powered practice</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="glass-card main-glass"><div class="mini-label">YOUR NEXT CHAPTER</div><div class="sparkle">✦</div><h3>Potential, meet preparation.</h3><p>Skills · Projects · Confidence</p><div class="mini-progress"><span></span></div><small>One step at a time</small></div>
+    <div class="float-card float-top">✧ <span>Career clarity</span></div><div class="float-card float-bottom">↗ <span>Skills that grow</span></div>
+  </div>
+</section>
+<section class="feature-intro"><span class="eyebrow">EVERYTHING IN ONE WORKSPACE</span><h2>A smarter way to plan your next move.</h2><p>Small, practical steps that make career development easier to manage.</p></section>
+<div class="feature-grid">
+  <article class="feature-card"><span class="feature-icon violet">◎</span><h3>Career discovery</h3><p>Explore roles that align with your skills and interests.</p></article>
+  <article class="feature-card"><span class="feature-icon blue">⌁</span><h3>Learning roadmap</h3><p>Turn skill gaps into a step-by-step plan.</p></article>
+  <article class="feature-card"><span class="feature-icon peach">▤</span><h3>Resume feedback</h3><p>Make your experience clearer and more relevant.</p></article>
+  <article class="feature-card"><span class="feature-icon green">◉</span><h3>Interview practice</h3><p>Practice answering questions and learn from feedback.</p></article>
+</div>
+{% endblock %}

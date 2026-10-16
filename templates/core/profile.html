@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Career profile{% endblock %}
+{% block content %}<div class="page-heading"><span class="eyebrow">YOUR FOUNDATION</span><h1>Build your career profile</h1><p>Tell us where you are today. You can update this anytime.</p></div><form method="post" class="panel form-panel wide-form">{% csrf_token %}{{ form.as_p }}<button class="button primary" type="submit">Save profile</button></form>{% endblock %}
